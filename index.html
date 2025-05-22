@@ -1,42 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SD Electric - Electrician Services</title>
+  <title>SD Electric - Villanyszerelés</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>SD Electric</h1>
-    <p>Professional Electrician Services</p>
+    <p>Megbízható villanyszerelés otthonoknak és vállalkozásoknak</p>
   </header>
 
+  <nav>
+    <a href="#rolam">Rólam</a> |
+    <a href="#szolgaltatasok">Szolgáltatások</a> |
+    <a href="#kapcsolat">Kapcsolat</a>
+  </nav>
+
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Hi, I'm Sápi Dante László — a certified electrician based in Hungary. I offer residential and commercial electrical services with quality you can trust.</p>
+    <section id="rolam">
+      <h2>Rólam</h2>
+      <p>Üdvözlöm! Sápi Dante László vagyok, regisztrált villanyszerelő. Magánszemélyeknek és cégeknek is vállalok megbízható, precíz munkát Magyarországon belül.</p>
     </section>
 
-    <section>
-      <h2>Services</h2>
+    <section id="szolgaltatasok">
+      <h2>Szolgáltatások</h2>
       <ul>
-        <li>Wiring & Rewiring</li>
-        <li>Lighting Installation</li>
-        <li>Electrical Repairs</li>
-        <li>Circuit Breaker Upgrades</li>
+        <li>Vezetékek cseréje és kiépítése</li>
+        <li>Világítás szerelés és korszerűsítés</li>
+        <li>Hibajavítás</li>
+        <li>Biztosítéktábla csere, bővítés</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Contact</h2>
+    <section id="kapcsolat">
+      <h2>Kapcsolat</h2>
       <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>Phone: +36 20 123 4567</p>
+      <p>Telefon: +36 20 123 4567</p>
+
+      <form name="kapcsolat" method="POST" data-netlify="true">
+        <label>Név:<br>
+          <input type="text" name="name" required>
+        </label><br><br>
+        <label>Email:<br>
+          <input type="email" name="email" required>
+        </label><br><br>
+        <label>Üzenet:<br>
+          <textarea name="message" rows="5" required></textarea>
+        </label><br><br>
+        <button type="submit">Küldés</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 SD Electric. All rights reserved.</p>
+    <p>&copy; 2025 SD Electric – Sápi Dante László e.v.</p>
   </footer>
 </body>
 </html>
