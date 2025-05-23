@@ -151,3 +151,15 @@ footer {
   margin-bottom: 0;
 }
 
+.intro {
+  background: linear-gradient(to right, #eef6ff, #ffffff);
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
