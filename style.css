@@ -234,3 +234,40 @@ footer {
 .cta-button:hover {
   background-color: #003280;
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  font-size: 30px;
+  border: none;
+  color: #004aad;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .main-nav a {
+    padding: 10px 15px;
+    display: block;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
