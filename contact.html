@@ -6,10 +6,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Kapcsolat</h1>
-    <p>Lépjen velem kapcsolatba az alábbi űrlapon keresztül</p>
-  </header>
+  <header class="main-header">
+  <div class="container">
+    <img src="logo.png" alt="SD Electric logo" class="logo">
+    
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Kezdőlap</a>
+      <a href="szolgaltatasok.html">Szolgáltatások</a>
+      <a href="referenciak.html">Referenciák</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+      <a href="kapcsolat.html#form" class="cta-button">Ajánlatkérés</a>
+    </nav>
+  </div>
+</header>
+
 
   <main>
     <form name="kapcsolat" method="POST" data-netlify="true">
